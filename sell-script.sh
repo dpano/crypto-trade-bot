@@ -28,4 +28,4 @@ echo "Loaded Variables - Starting Sell Bot on $EXCHANGE"
 	--strategy=$STRATEGY \
 	--notify=$NOTIFY \
 	--mult=$MULT \
-	--ignore-error >> sell.log
+	--ignore-error

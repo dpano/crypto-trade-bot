@@ -31,5 +31,5 @@ echo "Loaded variables - Starting Buy Bot for $MARKET"
 	--price=$PRICE \
 	--quote=$QUOTE \
 	--repeat=$REPEAT \
-	--ignore-error >> buy.log
+	--ignore-error
 
