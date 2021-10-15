@@ -10,12 +10,10 @@ set -eu
 
 ## Define buy bot variables
 EXCHANGE="BINA" #Exchange you want to run
-SIZE="0.00035114" #Amount of base currency to spend per order
 PRICE=0.000202
 QUOTE="BTC"
 MARKET="ETHBTC" #Markets to trade (USD-ETH,USD-BTC)
 REPEAT=1 #Repeat interval (Default is 1 hour)
-#SIZE=
 
 ## Execute buy bots
 echo "Loaded variables - Starting Buy Bot for $MARKET"
