@@ -1,0 +1,16 @@
+session_name: cryptobots # Name your session
+windows: 
+  - window_name: bots # Name the window
+    layout: tiled 
+    panes:
+      # 1 Sell bots load first
+      - ./sell-script.sh
+
+      # 2 Delay buy bots 10s then load
+      - shell_command:
+        - sleep 10
+        - ./buy-script.sh
+
+      # LAST - Load a blank shell and focus it
+      -
+        focus: true
