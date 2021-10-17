@@ -17,7 +17,7 @@ MULT="1.05" #Set sell price multiplier, default is 5% (1.05*)
 
 ## Execute sell bot
 echo "Loaded Variables - Starting Sell Bot on $EXCHANGE"
-./nefertiti sell \
+	nefertiti sell \
 	--exchange=$EXCHANGE \
 	--api-key=$API_KEY \
 	--api-secret=$API_SECRET \

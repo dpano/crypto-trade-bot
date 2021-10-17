@@ -17,7 +17,7 @@ REPEAT=1 #Repeat interval (Default is 1 hour)
 
 ## Execute buy bots
 echo "Loaded variables - Starting Buy Bot for $MARKET"
-	./nefertiti buy \
+	nefertiti buy \
 	--exchange=$EXCHANGE \
 	--market=$MARKET \
 	--api-key=$API_KEY \
