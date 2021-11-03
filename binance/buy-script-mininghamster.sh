@@ -10,24 +10,27 @@ set -eu
 
 ## Define buy bot variables
 EXCHANGE="BINA" #Exchange you want to run
-PRICE=0.000202
-QUOTE="BTC"
-MARKET="ETHBTC" #Markets to trade (USD-ETH,USD-BTC)
-REPEAT=1 #Repeat interval (Default is 1 hour)
+SIGNALS=MiningHamster
+PRICE=0.0002
+QUOTE=BTC
+MIN=0.00000050
+VOLUME=1
+REPEAT=0.0084 #Repeat interval (Default is 1 hour)
 
 ## Execute buy bots
-echo "Loaded variables - Starting Buy Bot for $MARKET"
+echo "Loaded variables - Starting Buy Bot for MiningHamster signals"
 	nefertiti buy \
 	--exchange=$EXCHANGE \
-	--market=$MARKET \
 	--api-key=$API_KEY \
 	--api-secret=$API_SECRET \
 	--telegram-app-key=$TELEGRAM_KEY \
 	--telegram-chat-id=$TELEGRAM_ID \
 	--pushover-app-key=$PUSHOVER_APP_KEY \
 	--pushover-user-key=$PUSHOVER_USER_KEY \
+	--repeat=$REPEAT \
+	--signals=$SIGNALS \
 	--price=$PRICE \
 	--quote=$QUOTE \
-	--repeat=$REPEAT \
-	--ignore-error
+	--test \
+	--mining-hamster-key=$MININGHAMSTER_APP_KEY
 
